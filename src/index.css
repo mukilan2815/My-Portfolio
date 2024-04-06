@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+main {
+  background: linear-gradient(
+    to right,
+    rgba(14, 18, 27, 255),
+    rgba(35, 39, 48, 255),
+    rgba(28, 31, 40, 255)
+  );
+  color: white;
+}
+
+.square {
+  animation: square 5s infinite ease-in-out; 
+}
+
+@keyframes square {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}

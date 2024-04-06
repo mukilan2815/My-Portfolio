@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/index.css" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.js"></script>
+    <style>
+      .full-screen {
+        height: 100vh;
+      }
+    </style>
+  </head>
+  <body data-scroll-container>
+    
+    <main class="">
+      <nav class="flex items-center py-5 px-10 justify-between">
+      <div class="flex  items-center">
+        <a href="index.html" class="text-3xl font-bold"><img src="./src/photos/logo.png" class="w-28 " alt=""></a>
+        <div class="w-5 h-5 ml-5 bg-transparent square border-2 border-blue-500 rounded">
+        </div>
+      </div>
+      <div>
+        <ul class="flex space-x-8">
+          <li><a href="#about-us">About Us</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#portfolio">Projects</a></li>
+          <li><a href="#experience">Experience</a></li>
+        </ul>
+      </div>
+    </nav>
+      <section id="hero" class="full-screen px-20 flex-col">
+        <div class="flex-row items-center pt-32">
+          <div class="flex">
+            <h1 class="text-white ml-20 font-bold transform -rotate-90">
+              FS Developer
+            </h1>
+            <h1 class="font-bold -ml-10 text-9xl">Mukilan</h1>
+          </div>
+            <div class="pl-10"></div>
+            <h3 class="text-2xl ml-28 w-1/2">
+              I am a Fullstack developer with experience in the AI domain, based in INDIA/TN.
+            </h3>
+            </div>
+          </div>
+        </div>
+        <div>
+          <img src="" alt="">
+        </div>
+      </section>
+
+      <section id="about-us" class="full-screen home-section">
+        <h2>About Us</h2>
+        <p>This is the about us section.</p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
+          auctor, nunc id aliquam tincidunt, nisl enim aliquet nunc, vitae
+          tincidunt nunc metus a nunc. Sed vitae nunc nec nunc tincidunt
+          aliquet. Nulla facilisi. Sed id nunc non mi tincidunt tincidunt. Nulla
+          facilisi. Sed id nunc non mi tincidunt tincidunt.
+        </p>
+      </section>
+
+      <section id="skills" class="full-screen">
+        <h2>Skills</h2>
+        <div class="grid grid-cols-3 gap-4">
+          <div class="p-4 bg-gray-200 rounded-lg">
+            <h3>HTML</h3>
+            <p>I have experience with HTML.</p>
+          </div>
+          <div class="p-4 bg-gray-200 rounded-lg">
+            <h3>CSS</h3>
+            <p>I have experience with CSS.</p>
+          </div>
+          <div class="p-4 bg-gray-200 rounded-lg">
+            <h3>JavaScript</h3>
+            <p>I have experience with JavaScript.</p>
+          </div>
+          <div class="p-4 bg-gray-200 rounded-lg">
+            <h3>React</h3>
+            <p>I have experience with React.</p>
+          </div>
+          <div class="p-4 bg-gray-200 rounded-lg">
+            <h3>Node.js</h3>
+            <p>I have experience with Node.js.</p>
+          </div>
+          <div class="p-4 bg-gray-200 rounded-lg">
+            <h3>SQL</h3>
+            <p>I have experience with SQL.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="portfolio" class="full-screen">
+        <h2>Projects</h2>
+        <div class="grid grid-cols-3 gap-4">
+          <div class="p-4 bg-gray-200 rounded-lg">
+            <h3>Project 1</h3>
+            <p>This is a sample project.</p>
+          </div>
+          <div class="p-4 bg-gray-200 rounded-lg">
+            <h3>Project 2</h3>
+            <p>This is another sample project.</p>
+          </div>
+          <div class="p-4 bg-gray-200 rounded-lg">
+            <h3>Project 3</h3>
+            <p>This is a third sample project.</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script>
+      const scroll = new LocomotiveScroll({
+        el: document.querySelector("[data-scroll-container]"),
+        smooth: true,
+      });
+    </script>
+  </body>
+</html>
