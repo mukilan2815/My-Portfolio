@@ -1,29 +1,154 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-main {
-  background: linear-gradient(
-    to right,
-    rgba(14, 18, 27, 255),
-    rgba(35, 39, 48, 255),
-    rgba(28, 31, 40, 255)
-  );
-  color: white;
+@import url("https://fonts.googleapis.com/css2?family=PP+Neue+Montreal&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
 }
 
-.square {
-  animation: square 5s infinite ease-in-out; 
+nav,
+footer {
+  position: fixed;
+  width: 100%;
+  padding: 2em;
+  display: flex;
+  justify-content: space-between;
+  z-index: 2;
+}
+footer {
+  bottom: 0;
 }
 
-@keyframes square {
-  0% {
-    transform: rotate(0deg);
+.links {
+  display: flex;
+  gap: 2em;
+}
+
+.logo,
+.link,
+footer p {
+  position: relative;
+}
+
+a,
+p {
+  text-decoration: none;
+  color: #fff;
+  font-family: "ttruns";
+  font-weight: 500;
+  font-size: 13px;
+  text-transform: uppercase;
+}
+
+.tagline {
+  width: 30%;
+  position: absolute;
+  left: 50%;
+  bottom: 2em;
+  transform: translate(-50%);
+  text-align: center;
+}
+
+.hero-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+}
+
+.hero-video video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.blocks {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+}
+
+.block {
+  flex: 1;
+  height: 100%;
+  background: #000;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+h1 {
+  font-family: "rabona";
+  font-size: 6vw;
+  font-weight: 100%;
+  line-height: 100%;
+  color: yellow;
+}
+
+.header {
+  width: 70%;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header-item {
+  position: relative;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  mix-blend-mode: difference;
+}
+
+.header-item h1 {
+  position: relative;
+}
+.counter {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  bottom: 10em;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+
+.counter p {
+  position: relative;
+  font-size: 30px;
+  color: yellow;
+  line-height: 120%;
+}
+
+@media (max-width: 900px) {
+  .tagline {
+    width: 80%;
+    bottom: 10em;
   }
-  50% {
-    transform: rotate(360deg);
+  .counter {
+    bottom: 15em;
   }
-  100% {
-    transform: rotate(0deg);
+  .block {
+    margin-left: -1px;
   }
+}
+
+@font-face {
+  font-family: "ttruns";
+  src: url(./photos/tt-runs-trial-cufonfonts/TT\ Runs\ Trial\ Bold.ttf);
+}
+
+@font-face {
+  font-family: "rabona";
+  src: url(./photos/rabona-cufonfonts/RABONA.otf);
 }

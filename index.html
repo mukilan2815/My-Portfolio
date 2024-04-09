@@ -3,122 +3,288 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="src/index.css" />
+    <link rel="stylesheet" href="./src/index.css" />
+    <link rel="stylesheet" href="./src/about.css" />
     <title>Document</title>
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
-    />
-    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.js"></script>
-    <style>
-      .full-screen {
-        height: 100vh;
-      }
-    </style>
   </head>
   <body data-scroll-container>
-    
-    <main class="">
-      <nav class="flex items-center py-5 px-10 justify-between">
-      <div class="flex  items-center">
-        <a href="index.html" class="text-3xl font-bold"><img src="./src/photos/logo.png" class="w-28 " alt=""></a>
-        <div class="w-5 h-5 ml-5 bg-transparent square border-2 border-blue-500 rounded">
-        </div>
-      </div>
-      <div>
-        <ul class="flex space-x-8">
-          <li><a href="#about-us">About Us</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#portfolio">Projects</a></li>
-          <li><a href="#experience">Experience</a></li>
-        </ul>
-      </div>
-    </nav>
-      <section id="hero" class="full-screen px-20 flex-col">
-        <div class="flex-row items-center pt-32">
-          <div class="flex">
-            <h1 class="text-white ml-20 font-bold transform -rotate-90">
-              FS Developer
-            </h1>
-            <h1 class="font-bold -ml-10 text-9xl">Mukilan</h1>
-          </div>
-            <div class="pl-10"></div>
-            <h3 class="text-2xl ml-28 w-1/2">
-              I am a Fullstack developer with experience in the AI domain, based in INDIA/TN.
-            </h3>
-            </div>
-          </div>
-        </div>
-        <div>
-          <img src="" alt="">
-        </div>
-      </section>
+    <main class="container">
+      <hr />
 
-      <section id="about-us" class="full-screen home-section">
-        <h2>About Us</h2>
-        <p>This is the about us section.</p>
+      <div class="hero-video">
+        <video loop autoplay muted>
+          <source src="./src/photos/hero.mp4" type="video/mp4" />
+        </video>
+      </div>
+      <div class="blocks">
+        <div class="block"></div>
+        <div class="block"></div>
+        <div class="block"></div>
+        <div class="block"></div>
+        <div class="block"></div>
+      </div>
+      <div class="header">
+        <div class="header-item">
+          <div class="header-item-wrapper h-1"><h1>M</h1></div>
+        </div>
+        <div class="header-item">
+          <div class="header-item-wrapper h-1"><h1>U</h1></div>
+        </div>
+        <div class="header-item">
+          <div class="header-item-wrapper h-1"><h1>K</h1></div>
+        </div>
+        <div class="header-item">
+          <div class="header-item-wrapper h-1"><h1>I</h1></div>
+        </div>
+        <div class="header-item">
+          <div class="header-item-wrapper h-1"><h1>L</h1></div>
+        </div>
+        <div class="header-item">
+          <div class="header-item-wrapper h-1"><h1>A</h1></div>
+        </div>
+        <div class="header-item">
+          <div class="header-item-wrapper h-1"><h1>N</h1></div>
+        </div>
+      </div>
+
+      <div class="counter">
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
-          auctor, nunc id aliquam tincidunt, nisl enim aliquet nunc, vitae
-          tincidunt nunc metus a nunc. Sed vitae nunc nec nunc tincidunt
-          aliquet. Nulla facilisi. Sed id nunc non mi tincidunt tincidunt. Nulla
-          facilisi. Sed id nunc non mi tincidunt tincidunt.
+          3 <br />
+          2 <br />
+          1
         </p>
-      </section>
-
-      <section id="skills" class="full-screen">
-        <h2>Skills</h2>
-        <div class="grid grid-cols-3 gap-4">
-          <div class="p-4 bg-gray-200 rounded-lg">
-            <h3>HTML</h3>
-            <p>I have experience with HTML.</p>
-          </div>
-          <div class="p-4 bg-gray-200 rounded-lg">
-            <h3>CSS</h3>
-            <p>I have experience with CSS.</p>
-          </div>
-          <div class="p-4 bg-gray-200 rounded-lg">
-            <h3>JavaScript</h3>
-            <p>I have experience with JavaScript.</p>
-          </div>
-          <div class="p-4 bg-gray-200 rounded-lg">
-            <h3>React</h3>
-            <p>I have experience with React.</p>
-          </div>
-          <div class="p-4 bg-gray-200 rounded-lg">
-            <h3>Node.js</h3>
-            <p>I have experience with Node.js.</p>
-          </div>
-          <div class="p-4 bg-gray-200 rounded-lg">
-            <h3>SQL</h3>
-            <p>I have experience with SQL.</p>
-          </div>
-        </div>
-      </section>
-
-      <section id="portfolio" class="full-screen">
-        <h2>Projects</h2>
-        <div class="grid grid-cols-3 gap-4">
-          <div class="p-4 bg-gray-200 rounded-lg">
-            <h3>Project 1</h3>
-            <p>This is a sample project.</p>
-          </div>
-          <div class="p-4 bg-gray-200 rounded-lg">
-            <h3>Project 2</h3>
-            <p>This is another sample project.</p>
-          </div>
-          <div class="p-4 bg-gray-200 rounded-lg">
-            <h3>Project 3</h3>
-            <p>This is a third sample project.</p>
-          </div>
-        </div>
-      </section>
+      </div>
+      <div class="tagline">
+        <p>
+          Hi, I am Mukilan, a full-stack developer from Tamil Nadu, India. I am
+          passionate about the latest technologies and love to continuously
+          learn and explore new things. I strive to gain in-depth knowledge in
+          the field of technology.
+        </p>
+      </div>
     </main>
+    <section>
+      <nav>
+        <div class="logo">
+          <a href="index.html"> Mukilan </a>
+        </div>
+        <div class="links">
+          <a href="">Service</a>
+          <a href="">Our works</a>
+          <a href="">About Us</a>
+          <a href="">Insights</a>
+        </div>
+        <div class="contact">
+          <a>Menu</a>
+        </div>
+        <div class="navbg">
+          <div>
+            <img src="" alt="">
+          </div>
+          <div>
+            <h2>Home</h2>
+            <h2>My Story</h2>
+            <h2>Future Goals</h2>
+            <h2>Contact</h2>
+          </div>
+          <hr>
+          <div>
+            <div></div>
+            <div></div>
+          </div>
+        </div>
+      </nav>
+      <script>
+        const menuButton = document.querySelector(".contact a");
+        const navbg = document.querySelector(".navbg");
+
+        menuButton.addEventListener("click", function() {
+          if (navbg.style.display === "block") {
+        navbg.style.display = "none";
+          } else {
+        navbg.style.display = "block";
+          }
+        });
+      </script>
+      </script>
+      </nav>
+      <footer>
+        <div class="main">
+          <a href="">mukilan2808@gmail.com</a>
+        </div>
+        <div class="location">
+          <a href="">Tamil Nadu, India</a>
+        </div>
+      </footer>
+
+      <div class="wrapper">
+        <div class="container1">
+          <div>
+            <a href="" class="text">Web Developer</a>
+          </div>
+          <div>
+            <a href="" class="text">Cyber Security</a>
+          </div>
+          <div>
+            <a href="" class="text">App Developer</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+      integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
 
     <script>
-      const scroll = new LocomotiveScroll({
-        el: document.querySelector("[data-scroll-container]"),
-        smooth: true,
+      window.addEventListener("scroll", function () {
+        if (window.pageYOffset > 0) {
+          gsap.to(".header-item", {
+            x: -1200,
+            duration: 3,
+            ease: "power3.out",
+          });
+        } else {
+          gsap.to(".header-item", {
+            x: 0,
+            duration: 3,
+            ease: "power3.out",
+          });
+        }
+      });
+      const tl = gsap.timeline({ delay: 1.75 });
+      const movements = [-100, 300, 150, -300, -90, 100, -200];
+      gsap.set("h1", { y: 100 });
+      gsap.set(".counter p ", { y: 35 });
+      gsap.set("footer", { opacity: 0 });
+      gsap.set(".tagline", { opacity: 0 });
+
+      tl.to("h1", {
+        y: 0,
+        duration: 1,
+        ease: "power3.out",
+        stagger: 0.1,
+      });
+      tl.to(
+        "footer",
+        {
+          opacity: 1,
+          duration: 1,
+          ease: "power3.out",
+        },
+        "-=1"
+      );
+      tl.to(
+        ".tagline",
+        {
+          opacity: 1,
+          duration: 1,
+          ease: "power3.out",
+        },
+        "-=0.1"
+      );
+      tl.to(
+        "counter p",
+        {
+          y: 0,
+          duration: 1,
+          ease: "power3.out",
+          stagger: 0.1,
+        },
+        "-=0.5"
+      );
+
+      tl.to(
+        "counter p",
+        {
+          y: 35,
+          duration: 2,
+          ease: "power3.out",
+          stagger: 0.1,
+        },
+        "-=0.5"
+      );
+
+      tl.to(
+        "counter p",
+        {
+          y: 70,
+          duration: 2,
+          ease: "power3.out",
+          stagger: 0.1,
+        },
+        "-=0.5"
+      );
+
+      tl.to(
+        ".counter p",
+        {
+          y: -105,
+          duration: 1,
+          ease: "power3.out",
+          stagger: 0.1,
+        },
+        "-=0.5"
+      );
+
+      tl.from(
+        ".tagline p",
+        {
+          y: 40,
+          opacity: 0,
+        },
+        "-=1"
+      );
+
+      tl.to("h1", {
+        fontSize: "15vw",
+        duration: 1,
+        ease: "power3.out",
+      });
+
+      tl.to(
+        ".header-item",
+        {
+          clipPath: "none",
+          duration: 0.1,
+        },
+        "<"
+      );
+
+      tl.to(
+        ".block",
+        {
+          clipPath: "polygon(0 0, 100% 0, 100% 0%, 0 0%)",
+          duration: 0.5,
+          stragger: {
+            amount: 0.5,
+            from: "random",
+            ease: "power3.out",
+          },
+        },
+        "<"
+      );
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("a").on("click", function (event) {
+          if (this.hash !== "") {
+            event.preventDefault();
+            var hash = this.hash;
+            $("html, body").animate(
+              {
+                scrollTop: $(hash).offset().top,
+              },
+              800,
+              function () {
+                window.location.hash = hash;
+              }
+            );
+          }
+        });
       });
     </script>
   </body>
