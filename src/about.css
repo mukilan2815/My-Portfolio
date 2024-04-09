@@ -6,56 +6,78 @@
 body {
   width: 100vw;
   height: 100vh;
-  background: #cdea67;
+  background: #bdda54;
 }
-.navbg{
-    width: 100vw;
+.navbg {
+  width: 100vw;
   height: 50vh;
   position: absolute;
+  top: 0;
+  left: 0;
   display: none;
   background: #cdea67;
 }
+.navheaders {
+  font-family: "ttruns";
+  display: flex;
+  flex-direction: column;
+}
+.nbinternational {
+  font-family: "nbinternational";
+}
+.sp {
+  display: flex;
+  justify-content: space-around;
+}
+.suma {
+  display: flex;
+  justify-content: space-around;
+}
+.hireme {
+  background: transparent;
+  border: #0f0f0f 2px solid;
+  padding: 0;
+}
 nav {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    padding: 2em;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 2em;
 }
 
 footer {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    display: flex;
-    color: #0f0f0f;
-    justify-content: space-between;
-    padding: 2em;
-    border-top: 1px solid rgba(0, 0, 0, 0.25);
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  color: #0f0f0f;
+  justify-content: space-between;
+  padding: 2em;
+  border-top: 1px solid rgba(0, 0, 0, 0.25);
 }
 
 nav a,
 footer a {
-    text-decoration: none;
-    color: #0f0f0f;
-    padding: 0 1em;
-    font-family: "ttruns";
+  text-decoration: none;
+  color: #0f0f0f;
+  padding: 0 1em;
+  font-family: "ttruns";
 }
 
 @media (max-width: 768px) {
-    nav,
-    footer {
-        flex-direction: column;
-        align-items: center;
-        padding: 1em;
-    }
+  nav,
+  footer {
+    flex-direction: column;
+    align-items: center;
+    padding: 1em;
+  }
 
-    nav a,
-    footer a {
-        padding: 0.5em;
-    }
-    
+  nav a,
+  footer a {
+    padding: 0.5em;
+  }
 }
 
 logo a {
@@ -95,6 +117,10 @@ logo a {
   text-transform: uppercase;
 }
 
+.imgg {
+  border-radius: 2%;
+}
+
 @media (max-width: 768px) {
   .text {
     font-size: 40px;
@@ -105,4 +131,9 @@ logo a {
 
 div {
   display: flex;
+}
+
+@font-face {
+  font-family: "nbinternational";
+  src: url("./photos/nb-international-regular/NB-International-Regular/NB\ International\ Regular.otf");
 }
